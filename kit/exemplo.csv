@@ -1,0 +1,3 @@
+id,experiencia,problema,conversa,evidencia,proximo_passo,decisao
+agentes,Atendimento em manutenção,Pedidos chegam sem dados,Entrevista fictícia com responsável,Demonstração fictícia com10pedidos e revisão humana,Entrevistar uma empresa real,ajustar
+midia,Escrita de instruções,Cliente não entende quando pedir orçamento,Retorno fictício de leitor,Peça didática fictícia com correção de título,Validar mensagem com público real,continuar

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!-- TEMPLATE projetos-landing-guia. Troque {{PLACEHOLDERS}} e o conteudo. NAO reescreva o CSS.
+     TRILINGUE: este arquivo e a versao PT (guia/index.html). As versoes guia/en/index.html e
+     guia/es/index.html sao copias traduzidas: lang="en"/"es", seletor com a.on no idioma,
+     hrefs do seletor ../ e ../es/ (ou ../en/), e imagens assets/ -> ../assets/. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Renda com IA — prepare seu próximo caminho profissional</title>
+<meta content="Investigue caminhos profissionais com IA e teste uma hipótese em30dias usando fichas e evidências. Kit gratuito, local, sem promessa de renda." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:var(--bg);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;height:auto;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+</style>
+<style>.brand{white-space:nowrap}nav .wrap{gap:12px}nav .links{gap:12px}h1,h2{text-wrap:balance}p{max-width:74ch}figure{margin:24px 0}figure img{display:block;width:100%;height:auto;border-radius:14px}.techhead{padding:40px 0;border-top:2px solid var(--amb);background:var(--bg2)}.techzone{background:var(--bg2)}.tablebox{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:640px}th,td{padding:18px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--amb)}:focus-visible{outline:3px solid var(--sky);outline-offset:4px}.hero .glow{display:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}.source{font-size:.9rem;color:var(--mut)}</style><link href="https://inematds.github.io/renda-com-ia/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/renda-com-ia/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/renda-com-ia/guia/es/" hreflang="es" rel="alternate"/></head><body><nav><div class="wrap"><a class="brand" href="#top">Renda com IA</a><span class="sep">|</span><span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span class="sep">·</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span><div class="links"><a class="sec" href="#caminhos">Caminhos</a><a class="sec" href="#plano">Plano</a><a class="sec" href="#tecnico">Kit</a><span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span><button aria-label="Alternar tema" class="tgl" id="themeToggle">☀️</button><a class="btn" href="https://github.com/inematds/renda-com-ia">GitHub</a></div></div></nav>
+<header class="hero" id="top"><div class="wrap"><div><h1>Prepare sua renda para a IA. <span class="amb">Renda com IA</span> ajuda você a testar um caminho.</h1><p class="mut">Kit gratuito de investigação profissional.</p><p class="lead">Use a experiência que você já tem para investigar o próximo passo, antes de gastar meses numa nova profissão.</p><div class="cta"><a class="btn" href="#caminhos">Entender os caminhos</a><a class="btn ghost" download="" href="../renda-com-ia-kit.zip">Baixar o kit</a></div></div><figure><img alt="Prepare sua renda para a IA: profissional avaliando um plano de trabalho" height="788" src="assets/banner.jpg" width="1400"/></figure></div></header>
+<section class="resumo" id="resumo"><div class="wrap"><h2>Em resumo</h2><p>Você quer continuar útil no trabalho enquanto a inteligência artificial assume mais tarefas. Renda com IA é um kit gratuito para profissionais que querem investigar alternativas sem decidir só pelo entusiasmo ou pelo medo. Ele compara caminhos, oferece fichas para conversar com quem contrata e organiza uma experiência de 30 dias. Você pode ler o guia e preencher os documentos numa planilha ou editor de texto; a conferência automática local é opcional. O resultado é uma hipótese mais bem investigada, sem promessa de renda ou contratação.</p><figure><img alt="Caminhos para investigar: agentes, infraestrutura, avaliação, mídia, vendas e negócio" height="788" loading="lazy" src="assets/banner-grade.jpg" width="1400"/></figure></div></section>
+<section id="video"><div class="wrap"><h2>Entenda a mudança no trabalho</h2><!-- VIDEO: entra o explicavideo do projeto quando publicado --><p class="mut">O vídeo em português está em produção. Enquanto isso, o guia e o kit já podem ser usados.</p></div></section>
+<section id="mudanca"><div class="wrap"><h2>Procure o que ainda impede a entrega</h2><p>Quando produzir texto ou código fica mais fácil, o problema pode mudar: entender o pedido, decidir uma prioridade, conferir o resultado ou conquistar a confiança do cliente. Esse ponto que trava o resultado é o <strong>gargalo</strong>.</p><p>Exemplo fictício: uma empresa de manutenção recebe pedidos incompletos. A IA pode organizar as mensagens. Alguém ainda precisa definir quais informações faltam, revisar a resposta e cumprir a visita. Conhecer esse trabalho pode ser mais útil do que aprender outra ferramenta sem ter um problema para resolver.</p><p><strong>2028 é um horizonte de preparação.</strong> Não é uma data certa para o fim do seu emprego. Os caminhos abaixo são hipóteses para investigar no seu contexto, sem ranking salarial.</p><p>Um agente de IA recebe um objetivo e executa etapas, como organizar pedidos e sugerir informações que faltam. Uma pessoa define os limites e confere a entrega.</p></div></section>
+<section id="caminhos"><div class="wrap"><h2>Qual caminho aproveita o que você já sabe?</h2><p class="sub">Escolha dois para investigar. Compare a sua experiência com a prova que você consegue produzir agora.</p><p class="source">No celular, deslize a tabela para ver todas as colunas.</p><div aria-label="Comparação dos caminhos profissionais" class="tablebox" role="region" tabindex="0"><table><thead><tr><th>Caminho</th><th>Onde seu julgamento entra</th><th>Primeira prova</th><th>O que confirmar</th></tr></thead><tbody>
+<tr><td>Implantação de agentes</td><td>Entender a rotina e conferir a entrega</td><td>Triagem de pedidos fictícios com revisão humana</td><td>Quem precisa disso e que integração seria necessária</td></tr>
+<tr><td>Infraestrutura</td><td>Instalar, manter e responder pelo trabalho físico</td><td>Mapa de formação e conversa com profissional</td><td>Requisitos locais, instituições e empregadores</td></tr>
+<tr><td>Avaliação e segurança</td><td>Definir acerto e descobrir falhas</td><td>Teste repetível com dados inventados</td><td>Conhecimentos exigidos e autorização do ambiente</td></tr>
+<tr><td>Produção de mídia</td><td>Escolher a mensagem e dirigir a produção</td><td>Peça de portfólio com retorno do público</td><td>Quem usaria a peça e que qualidade espera</td></tr>
+<tr><td>Vendas de confiança</td><td>Entender o compromisso e negociar uma entrega possível</td><td>Conversa de investigação com notas anônimas</td><td>Como a compra acontece e quem decide</td></tr>
+<tr><td>Negócio com agentes</td><td>Encontrar clientes e sustentar uma entrega</td><td>Demonstração de um serviço pequeno</td><td>Demanda, custo e risco antes de tentar escalar</td></tr>
+</tbody></table></div><p class="source">Nenhuma dessas provas substitui formação profissional. O kit não ensina intervenção elétrica e não autoriza testar sistemas de terceiros.</p></div></section>
+<section id="exemplo"><div class="wrap"><h2>Do pedido parado à prova de trabalho</h2><div class="step"><div class="b">1</div><div><h3>Entenda a demora</h3><p>Acompanhe um pedido na empresa fictícia. Registre a informação que falta e quem decide o orçamento.</p></div></div><div class="step"><div class="b">2</div><div><h3>Faça um teste limitado</h3><p>Crie 10 pedidos inventados. Peça à IA para identificar o que falta. Uma pessoa revisa; nenhuma resposta vai para cliente.</p></div></div><div class="step"><div class="b">3</div><div><h3>Compare o resultado</h3><p>Conte acertos e erros e meça o tempo de revisão. Se a IA inventar um preço, ajuste o teste. Não declare economia antes de medir.</p></div></div><p>Esse exemplo é didático. Não é um caso de ganho real. Em outra área, a prova pode ser uma peça de mídia, um teste de qualidade ou uma investigação de formação.</p></div></section>
+<section id="plano"><div class="wrap"><h2>Seu teste para os próximos 30 dias</h2><p class="sub">É uma agenda de investigação; qualificação e contratação podem exigir muito mais tempo.</p><div class="phase"><div class="tag">Dias 1–7</div><div class="d"><strong>Escolha duas hipóteses</strong><span>Escreva a experiência que já tem e um problema que conhece.</span></div></div><div class="phase"><div class="tag">Dias 8–14</div><div class="d"><strong>Converse com quem faz ou contrata</strong><span>Use o roteiro de entrevista. Registre requisitos, objeções e o que você ainda não sabe.</span></div></div><div class="phase"><div class="tag">Dias 15–21</div><div class="d"><strong>Produza uma prova pequena</strong><span>Guarde um arquivo que outra pessoa possa revisar. Para infraestrutura, faça um mapa de formação local.</span></div></div><div class="phase"><div class="tag">Dias 22–30</div><div class="d"><strong>Peça retorno e decida</strong><span>Continuar, ajustar, abandonar ou pesquisar. Escolha o próximo passo e a data.</span></div></div></div></section>
+<section id="fontes"><div class="wrap"><h2>O que sabemos — e o que é hipótese</h2><p>A METR mede desempenho em tarefas de software. Seu horizonte de 50% de sucesso não equivale a trabalhar com confiança sozinho numa empresa. <a href="https://metr.org/notes/2026-01-22-time-horizon-limitations/">Leia as limitações na METR</a>.</p><p>O relatório 2024 do DOE/LBNL estimou 4,4% da eletricidade dos EUA em 2023 para centros de dados e projetou 6,7–12% em 2028. É um cenário daquele relatório, não uma previsão de vagas no Brasil. <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers">Fonte: DOE</a>.</p><p>A Anthropic anunciou uma iniciativa de formação de engenheiros de implantação com parceiros. Meta anunciada não significa vaga garantida ou inscrição aberta. <a href="https://www.anthropic.com/news/claude-frontier-academy">Fonte: Anthropic</a>.</p><p><a href="../FONTES.md">Fontes e limites completos</a> · Conferidos em 16/11/2026. Salários americanos e faturamentos pessoais não foram usados como promessa de resultado.</p></div></section>
+<div class="techhead" id="tecnico"><div class="wrap"><h2>O kit: para quem quer registrar a investigação</h2><p>Você não precisa desta parte para entender o que está acima. Os documentos funcionam sem IA; Python é opcional para conferir o preenchimento.</p></div></div><div class="techzone">
+<section id="arquivos"><div class="wrap"><h2>Baixe, extraia e preencha</h2><p><a class="btn" download="" href="../renda-com-ia-kit.zip">Baixar kit completo em ZIP</a></p><p>Extraia o ZIP e abra a pasta <strong>renda-com-ia</strong>. Entre na pasta <strong>kit</strong> e comece pelo documento COMECE-AQUI.md, que abre em editor de texto. Não precisa de conta, chave, Git ou conexão para preencher os modelos.</p><ul><li><a download="" href="../kit/caminhos.csv">Comparação dos caminhos</a> — abre em planilha.</li><li><a download="" href="../kit/ficha.md">Ficha de hipótese</a> — experiência, problema e prova.</li><li><a download="" href="../kit/entrevista.md">Roteiro de entrevista</a> — perguntas e notas anônimas.</li><li><a download="" href="../kit/plano-30-dias.md">Plano de 30 dias</a> — agenda e critério de pronto.</li><li><a download="" href="../kit/modelo.csv">Modelo de investigação</a> — duas linhas vazias para preencher.</li><li><a download="" href="../kit/exemplo.csv">Exemplo fictício preenchido</a> — mostra o formato esperado.</li></ul></div></section>
+<section id="guia"><div class="wrap"><h2>Conferência local opcional</h2><p>O conferidor roda com Python 3, sem instalar bibliotecas, acessar rede ou chamar IA. Ele mostra campos vazios e decisões inválidas. Não verifica se o conteúdo é verdadeiro, se a demonstração funciona ou qual profissão você deve escolher.</p><h3>Primeiro uso no Windows</h3><p>Instale Python 3 pelo site oficial python.org e habilite a opção de disponibilizar o comando no terminal. Abra a pasta extraída no Explorador, clique na barra de endereço, digite cmd e pressione Enter. Rode:</p><pre>py -3 scripts/conferir.py kit/exemplo.csv</pre><h3>Primeiro uso no Linux ou Mac</h3><p>Use Python 3 instalado por python.org ou pelo gerenciador do seu sistema. No terminal, entre na pasta extraída renda-com-ia (você pode arrastá-la para completar o caminho após cd). Rode:</p><pre>python3 scripts/conferir.py kit/exemplo.csv</pre><p>O exemplo retorna duas linhas com 6/6 campos e decisões <code translate="no">ajustar</code> e <code translate="no">continuar</code>. Isso significa preenchimento completo, sem avaliação de carreira. Para usar seus dados, copie modelo.csv para minha-investigacao.csv na pasta kit, preencha e execute:</p><pre>python3 scripts/conferir.py kit/minha-investigacao.csv</pre><p>No Windows, substitua python3 por py -3. Preserve os nomes das colunas e os IDs <code translate="no">agentes, infra, avaliacao, midia, vendas, negocio</code>. Decisões válidas: <code translate="no">continuar, ajustar, abandonar, pesquisar</code>. Texto com vírgula precisa de aspas no CSV. Links e notas de evidência podem apontar para arquivos seus.</p><p>Código de saída 0: todos os campos preenchidos;1: faltam campos;2: arquivo inválido ou indisponível. Um resultado 1 é esperado no modelo vazio. Para ver JSON, acrescente --json ao comando.</p><p>Se aparecer “comando não encontrado”, confira a instalação do Python. Se aparecer “cabeçalho incorreto”, volte ao modelo original e preserve as sete colunas. Os arquivos do kit estão em português; o guia tem versões EN e ES.</p></div></section>
+<section id="limites"><div class="wrap"><h2>Use o retorno para decidir</h2><p>O kit está pronto quando você tem uma hipótese escrita, uma conversa registrada, uma prova revisável e uma decisão. O campo evidência preenchido é apenas uma referência: você ainda precisa abrir e avaliar o arquivo.</p><p>Se a conversa ou o teste não aconteceu, registre a lacuna. Abandonar uma hipótese pode evitar desperdício. A próxima experiência começa do que você aprendeu.</p></div></section></div>
+<footer><div class="wrap"><p>Renda com IA · Kit educacional gratuito · v1.0.0<br/><a href="https://github.com/inematds/renda-com-ia">Repositório</a> · <a href="https://inema.club">INEMA.CLUB</a></p></div></footer>
+<script>(function(){var key='renda-com-ia-theme',b=document.body,t=document.getElementById('themeToggle');try{if(localStorage.getItem(key)==='light')b.classList.add('light')}catch(e){}function state(){t.textContent=b.classList.contains('light')?'🌙':'☀️';t.setAttribute('aria-pressed',String(b.classList.contains('light')))}state();t.onclick=function(){b.classList.toggle('light');try{localStorage.setItem(key,b.classList.contains('light')?'light':'dark')}catch(e){}state()}})();</script></body></html>
