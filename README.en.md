@@ -2,39 +2,41 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![Renda com IA](guia/assets/banner-en.jpg)](https://inematds.github.io/renda-com-ia/guia/en/)
+[![Renda com IA](guia/assets/banner.jpg)](https://inematds.github.io/renda-com-ia/guia/en/)
 
+## What It Is
 
-🎬 [Video in Portuguese.](https://inematds.github.io/renda-com-ia/videos/)
+You already know problems, customers, and decisions that a tool alone cannot understand. Renda com IA is a free kit for turning that experience into the design of an operation supported by agents. You see a concrete opportunity, assign roles, prepare a demonstration, and organize an offer. The kit also helps you recognize what can remain yours: methods, expertise, reputation, and autonomy. The documents work in an editor; an optional local generator builds your map on a page.
 
-## What it is
+## See the Opportunity
 
-You want to remain useful at work as artificial intelligence takes on more tasks. Renda com IA is a free kit for professionals who want to explore alternatives without making decisions based only on enthusiasm or fear. It compares paths, provides worksheets for talking with potential employers, and organizes a 30-day experience. You can read the guide and fill out the documents in a spreadsheet or text editor; local automated checking is optional. The result is a better-researched hypothesis, with no promise of income or employment.
+Your experience can guide an AI team in organizing requests, preparing drafts, and tracking a delivery. You direct and review. The kit helps you move from that vision to a map and an offer; it does not install or run agents.
 
-## User guide
+[Complete guide](https://inematds.github.io/renda-com-ia/guia/en/) · [Videos](https://inematds.github.io/renda-com-ia/videos/)
 
-https://inematds.github.io/renda-com-ia/guia/en/
+## Start with Your Vision
 
-## First use
+Download [the kit](renda-com-ia-kit.zip), extract it, and open kit/COMECE-AQUI.md. Then use kit/visao.md, equipe.md, oferta.md, and algo-seu.md. You can fill in the documents in an editor.
 
-Download [the ZIP kit](renda-com-ia-kit.zip), extract it, and open kit/COMECE-AQUI.md. Fill out the worksheets in an editor and the CSVs in a spreadsheet. Git, AI, or a service key aren’t required.
+## Optional Local Generator
 
-Optional check with Python3, from the extracted folder:
+With Python 3, from inside the extracted folder:
 
 ```bash
-python3 scripts/conferir.py kit/exemplo.csv
+python3 scripts/montar_operacao.py kit/operacao-exemplo.json --saida exemplo-operacao.md
 ```
 
-On Windows: `py -3 scripts/conferir.py kit/exemplo.csv`. Output: `agentes` and `midia` with 6/6 fields. This checks completion, not the accuracy of the data or future income.
+Windows: use py -3 instead of python3. Open exemplo-operacao.md to see the completed map. Copy kit/operacao-modelo.json as kit/minha-operacao.json and fill it in for your case, preserving the keys. Choose a new output name.
 
-For your data, copy kit/modelo.csv as kit/minha-investigacao.csv, fill it out, and replace the path in the command. Codes: 0 complete, 1 missing fields, 2 invalid file.
+The program organizes the document; it does not prove functionality, demand, or income. Examples are fictional. [Sources and limitations](FONTES.md).
 
 ## Verification
 
 ```bash
+python3 scripts/testar_operacao.py
 python3 scripts/testar.py
 ```
 
-## Limitations and sources
+## Comparing the Approaches
 
-Six hypotheses, with no salary ranking. Fictional example. A 30-day plan is not a qualification timeline. Kit in Portuguese, guide and README in PT/EN/ES. [Sources](FONTES.md).
+The first video is preserved: https://www.youtube.com/watch?v=aQoAdOuU_K4 . The second is in production with the vision of possibility and building. [Comparison plan](comparacao/PLANO.md) and [frozen guide A](comparacao/a/guia/). This is an editorial comparison, with different dates and exposure.

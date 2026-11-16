@@ -4,37 +4,39 @@
 
 [![Renda com IA](guia/assets/banner.jpg)](https://inematds.github.io/renda-com-ia/guia/)
 
-
-🎬 [Vídeo em português.](https://inematds.github.io/renda-com-ia/videos/)
-
 ## O que é
 
-Você quer continuar útil no trabalho enquanto a inteligência artificial assume mais tarefas. Renda com IA é um kit gratuito para profissionais que querem investigar alternativas sem decidir só pelo entusiasmo ou pelo medo. Ele compara caminhos, oferece fichas para conversar com quem contrata e organiza uma experiência de 30 dias. Você pode ler o guia e preencher os documentos numa planilha ou editor de texto; a conferência automática local é opcional. O resultado é uma hipótese mais bem investigada, sem promessa de renda ou contratação.
+Você já conhece problemas, clientes e decisões que uma ferramenta sozinha não entende. Renda com IA é um kit gratuito para transformar essa experiência no desenho de uma operação apoiada por agentes. Você vê uma possibilidade concreta, distribui os papéis, prepara uma demonstração e organiza uma oferta. O kit também ajuda a reconhecer o que pode continuar seu: método, repertório, reputação e autonomia. Os documentos funcionam em um editor; um gerador local opcional monta seu mapa em uma página.
 
-## Guia de uso
+## Veja a possibilidade
 
-https://inematds.github.io/renda-com-ia/guia/
+Sua experiência pode orientar uma equipe de IA para organizar pedidos, preparar rascunhos e acompanhar uma entrega. Você dirige e revisa. O kit ajuda a passar dessa visão a um mapa e a uma oferta; não instala nem executa agentes.
 
-## Primeiro uso
+[Guia completo](https://inematds.github.io/renda-com-ia/guia/) · [Vídeos](https://inematds.github.io/renda-com-ia/videos/)
 
-Baixe [o kit ZIP](renda-com-ia-kit.zip), extraia e abra kit/COMECE-AQUI.md. Preencha as fichas num editor e os CSVs numa planilha. Não precisa de Git, IA ou chave de serviço.
+## Comece pela sua visão
 
-Conferência opcional com Python3, a partir da pasta extraída:
+Baixe [o kit](renda-com-ia-kit.zip), extraia e abra kit/COMECE-AQUI.md. Depois use kit/visao.md, equipe.md, oferta.md e algo-seu.md. Você pode preencher os documentos num editor.
+
+## Gerador local opcional
+
+Com Python 3, dentro da pasta extraída:
 
 ```bash
-python3 scripts/conferir.py kit/exemplo.csv
+python3 scripts/montar_operacao.py kit/operacao-exemplo.json --saida exemplo-operacao.md
 ```
 
-No Windows: `py -3 scripts/conferir.py kit/exemplo.csv`. Saída: agentes e midia com 6/6 campos. Isso confere preenchimento, não a verdade dos dados nem renda futura.
+Windows: py -3 no lugar de python3. Abra exemplo-operacao.md para ver o mapa pronto. Copie kit/operacao-modelo.json como kit/minha-operacao.json e preencha para seu caso, preservando as chaves. Escolha um nome de saída novo.
 
-Para seus dados, copie kit/modelo.csv como kit/minha-investigacao.csv, preencha e substitua o caminho no comando. Códigos: 0 completo, 1 faltam campos, 2 arquivo inválido.
+O programa organiza o documento; não comprova funcionamento, demanda ou renda. Exemplos são fictícios. [Fontes e limites](FONTES.md).
 
 ## Verificação
 
 ```bash
+python3 scripts/testar_operacao.py
 python3 scripts/testar.py
 ```
 
-## Limites e fontes
+## Comparação das abordagens
 
-Seis hipóteses, sem ranking salarial. Exemplo fictício. Plano de 30 dias não é prazo de qualificação. Kit em português, guia e README em PT/EN/ES. [Fontes](FONTES.md).
+O primeiro vídeo está preservado: https://www.youtube.com/watch?v=aQoAdOuU_K4 . O segundo está em produção com a visão de possibilidade e construção. [Plano de comparação](comparacao/PLANO.md) e [guia A congelado](comparacao/a/guia/). É comparação editorial, com datas e exposição diferentes.

@@ -1,0 +1,17 @@
+{
+ "nome":"Pedidos de manutenção prontos para revisão",
+ "para_quem":"Uma pequena empresa de manutenção",
+ "resultado":"Transformar uma mensagem incompleta em um resumo com as perguntas que faltam",
+ "experiencia":"Conhecimento de atendimento e manutenção",
+ "papeis":[
+  {"nome":"Entrada","recebe":"Pedido fictício","entrega":"Resumo e informação ausente","chama_voce":"Pedido ambíguo ou dado sensível"},
+  {"nome":"Proposta","recebe":"Resumo revisado e condições aprovadas","entrega":"Rascunho sem inventar preço","chama_voce":"Preço, prazo ou condição não aprovados"},
+  {"nome":"Acompanhamento","recebe":"Compromisso aprovado","entrega":"Próximo passo sugerido","chama_voce":"Atraso ou mudança de escopo"}
+ ],
+ "aprovacao_humana":"Uma pessoa revisa cada saída e aprova qualquer comunicação ou compromisso",
+ "demonstracao":"Percorrer 10 pedidos inventados, guardar as saídas e medir tempo, erros e retrabalho",
+ "oferta":"Uma demonstração de organização dos pedidos para revisão da equipe",
+ "fora_do_escopo":"Enviar mensagens, fixar preços, agendar ou acessar dados reais",
+ "algo_seu":"Método de entrega, exemplos fictícios revisados e portfólio autorizado",
+ "proximo_passo":"Mostrar a demonstração a um profissional e registrar o retorno"
+}

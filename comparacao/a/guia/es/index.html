@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<!-- TEMPLATE projetos-landing-guia. Troque {{PLACEHOLDERS}} e o conteudo. NAO reescreva o CSS.
+     TRILINGUE: este arquivo e a versao PT (guia/index.html). As versoes guia/en/index.html e
+     guia/es/index.html sao copias traduzidas: lang="en"/"es", seletor com a.on no idioma,
+     hrefs do seletor ../ e ../es/ (ou ../en/), e imagens assets/ -> ../assets/. -->
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Renda com IA — prepara tu próximo camino profesional</title>
+<meta content="Investiga caminos profesionales con IA y prueba una hipótesis en30dias usando fichas y evidencias. Kit gratuito, local, sin promesas de ingresos." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:var(--bg);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;height:auto;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+</style>
+<style>.brand{white-space:nowrap}nav .wrap{gap:12px}nav .links{gap:12px}h1,h2{text-wrap:balance}p{max-width:74ch}figure{margin:24px 0}figure img{display:block;width:100%;height:auto;border-radius:14px}.techhead{padding:40px 0;border-top:2px solid var(--amb);background:var(--bg2)}.techzone{background:var(--bg2)}.tablebox{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:640px}th,td{padding:18px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--amb)}:focus-visible{outline:3px solid var(--sky);outline-offset:4px}.hero .glow{display:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}.source{font-size:.9rem;color:var(--mut)}</style><link href="https://inematds.github.io/renda-com-ia/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/renda-com-ia/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/renda-com-ia/guia/es/" hreflang="es" rel="alternate"/><style id="diagramas-css">
+.diagram{margin:30px 0;padding:28px;background:var(--bg2);border:1px solid var(--line);border-radius:16px}
+.diagram figcaption{font-size:.9rem;color:var(--mut);margin-top:20px;max-width:74ch}
+.diagram h3{font-size:1.25rem;line-height:1.3;margin-bottom:22px}
+.role-route,.case-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.role-node,.case-node{position:relative;min-width:0}
+.role-node:not(:last-child):after,.case-node:not(:last-child):after{content:'→';position:absolute;right:-28px;top:22px;color:var(--amb);font-size:25px}
+.role-icon{width:52px;height:52px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;color:var(--amb);margin-bottom:16px}
+.diagram svg{width:28px;height:28px;display:block}
+.role-node strong,.case-node strong{display:block;font:600 1.02rem/1.4 Sora,sans-serif;margin-bottom:8px}
+.role-node p,.case-node p{font-size:1rem;line-height:1.55;margin:0;color:var(--txt)}
+.diagram .diagram-note{margin:20px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:.95rem;color:var(--mut)}
+.case-node small{display:block;color:var(--mut);font-size:.8rem;margin:8px 0 14px}
+.case-node blockquote{margin:0;min-height:108px;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:1.08rem;line-height:1.55}
+.check-strip{display:flex;flex-wrap:wrap;gap:12px 24px;padding:22px 0 0}
+.check-strip span{display:flex;align-items:center;gap:8px;font-size:.93rem}
+.check-strip svg{color:var(--amb);width:20px;height:20px;flex-shrink:0}
+.roadline{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:0;padding:0;list-style:none}
+.roadline:before{content:'';position:absolute;top:20px;left:20px;right:20px;height:1px;background:var(--amb)}
+.roadline li{position:relative;min-width:0}
+.road-marker{position:relative;width:42px;height:42px;border-radius:50%;background:var(--bg2);border:2px solid var(--amb);display:grid;place-items:center;font:600 1rem Sora,sans-serif;color:var(--amb);margin-bottom:20px}
+.roadline time{display:block;font-size:.84rem;color:var(--mut);margin-bottom:8px}
+.roadline strong{display:block;font:600 1.1rem Sora,sans-serif;margin-bottom:12px}
+.roadline p{font-size:.95rem;line-height:1.55;margin:0 0 18px}
+.road-output{padding-top:14px;border-top:1px solid var(--line);font-size:.87rem;color:var(--amb)}
+.road-output small{display:block;color:var(--mut);margin-bottom:5px;font-size:.76rem}
+.energy-heading{margin:0 0 26px;font-size:1rem;color:var(--mut)}
+.energy-row{display:grid;grid-template-columns:230px minmax(0,1fr) 90px;gap:20px;align-items:center;margin:24px 0}
+.energy-row label{font-size:.95rem}
+.energy-row b{font:600 1.1rem Sora,sans-serif;text-align:right;white-space:nowrap}
+.energy-track{position:relative;height:34px;border-bottom:1px solid var(--line);background:var(--card)}
+.energy-fill{height:100%;background:var(--amb);width:36.666667%;border-radius:3px}
+.energy-range{position:absolute;left:55.833333%;right:0;height:100%;background:color-mix(in srgb,var(--amb) 22%,var(--bg2));border:2px dashed var(--amb);border-radius:3px}
+.energy-scale{margin:8px 110px 0 250px;display:flex;justify-content:space-between;font-size:.8rem;color:var(--mut)}
+.energy-legend{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--mut);margin-top:22px}
+.range-key{display:inline-block;width:30px;height:16px;background:color-mix(in srgb,var(--amb) 22%,var(--bg2));border:2px dashed var(--amb)}
+@media(max-width:760px){
+ .diagram{padding:22px;margin:24px 0}
+ .role-route,.case-route{grid-template-columns:1fr;gap:38px}
+ .role-node{padding-left:70px;min-height:60px}
+ .role-icon{position:absolute;left:0;top:0;margin:0}
+ .role-node:not(:last-child):after{content:'↓';left:17px;right:auto;top:auto;bottom:-32px}
+ .case-node:not(:last-child):after{content:'↓';right:auto;left:50%;top:auto;bottom:-32px}
+ .case-node blockquote{min-height:0}
+ .roadline{grid-template-columns:1fr;gap:26px}
+ .roadline:before{top:20px;bottom:20px;left:20px;right:auto;width:1px;height:auto}
+ .roadline li{padding-left:64px}
+ .road-marker{position:absolute;left:0;top:0;margin:0}
+ .roadline p{margin-bottom:12px}
+ .energy-row{grid-template-columns:minmax(0,1fr) auto;gap:10px;margin:26px 0}
+ .energy-track{grid-column:1/-1;grid-row:2}
+ .energy-row b{grid-column:2;grid-row:1}
+ .energy-scale{margin:0}
+}
+</style></head><body><nav><div class="wrap"><a class="brand" href="#top">Renda com IA</a><span class="sep">|</span><span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span class="sep">·</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span><div class="links"><a class="sec" href="#caminhos">Caminos</a><a class="sec" href="#plano">Plan</a><a class="sec" href="#tecnico">Kit</a><span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span><button aria-label="Cambiar tema" class="tgl" id="themeToggle">☀️</button><a class="btn" href="https://github.com/inematds/renda-com-ia">GitHub</a></div></div></nav>
+<header class="hero" id="top"><div class="wrap"><div><h1>Prepara tus ingresos para la IA. <span class="amb">Renda com IA</span> te ayuda a probar un camino.</h1><p class="mut">Kit gratuito de investigación profesional.</p><p class="lead">Usa la experiencia que ya tienes para investigar el siguiente paso antes de dedicar meses a una nueva profesión.</p><div class="cta"><a class="btn" href="#caminhos">Entender los caminos</a><a class="btn ghost" download="" href="../../renda-com-ia-kit.zip">Descargar el kit</a></div></div><figure><img alt="Prepara tus ingresos para la IA: profesional evaluando un plan de trabajo" height="788" src="../assets/banner-es.jpg" width="1400"/></figure></div></header>
+<section class="resumo" id="resumo"><div class="wrap"><h2>En resumen</h2><p>Quieres seguir siendo útil en el trabajo mientras la inteligencia artificial asume más tareas. Renda com IA es un kit gratuito para profesionales que quieren investigar alternativas sin decidirse solo por el entusiasmo o el miedo. Compara caminos, ofrece fichas para conversar con quienes contratan y organiza una experiencia de 30 días. Puedes leer la guía y completar los documentos en una hoja de cálculo o un editor de texto; la revisión automática local es opcional. El resultado es una hipótesis mejor investigada, sin promesas de ingresos ni de contratación.</p><figure><img alt="Caminos para investigar: agentes, infraestructura, evaluación, medios, ventas y negocios" height="788" loading="lazy" src="../assets/banner-grade-es.jpg" width="1400"/></figure></div></section>
+<section id="video"><div class="wrap"><h2>Entiende el cambio en el trabajo</h2><iframe style="display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:12px" loading="lazy" src="https://www.youtube-nocookie.com/embed/aQoAdOuU_K4" title="Renda com IA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p class="mut">Vídeo en portugués, con subtítulos en portugués.</p><p><a href="https://inematds.github.io/renda-com-ia/videos/">Abrir el reproductor y descargar el video.</a></p></div></section>
+<section id="mudanca"><div class="wrap"><h2>Busca qué sigue impidiendo la entrega</h2><p>Cuando producir texto o código se vuelve más fácil, el valor puede trasladarse a entender la solicitud, verificar el resultado y ganarse la confianza del cliente. El punto que bloquea esa entrega es el cuello de botella.</p><figure class="diagram" id="diagrama-papeis"><h3>¿Quién hace qué?</h3><div class="role-route"><div class="role-node"><div class="role-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M4 12h5l2 3h2l2-3h5M8 8h8"></path></svg></div><strong>Solicitud incompleta</strong><p>“Necesito un presupuesto.”</p></div><div class="role-node"><div class="role-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="12" rx="3" width="12" x="6" y="6"></rect><path d="M9 1v5m6-5v5M9 18v5m6-5v5M1 9h5m-5 6h5m12-6h5m-5 6h5M9 12h6"></path></svg></div><strong>La IA organiza</strong><p>Señala la información que falta.</p></div><div class="role-node"><div class="role-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 22v-3a8 8 0 0 1 16 0v3"></path></svg></div><strong>La persona decide</strong><p>Verifica los datos y aprueba la respuesta.</p></div></div><p class="diagram-note">El cuello de botella puede estar aquí: falta información para decidir.</p><figcaption>Ejemplo ficticio: la IA organiza; una persona decide y responde por la entrega. Un agente de IA ejecuta etapas para alcanzar un objetivo. Tú defines los límites y verificas la entrega.</figcaption></figure><p><strong>2028 es un horizonte de preparación.</strong> No es una fecha exacta para el fin de tu empleo. Los caminos de abajo son hipótesis para investigar en tu contexto, sin clasificación salarial.</p></div></section>
+<section id="caminhos"><div class="wrap"><h2>¿Qué camino aprovecha lo que ya sabes?</h2><p class="sub">Elige dos para investigar. Compara tu experiencia con la prueba que puedes producir ahora.</p><p class="source">En el móvil, desliza la tabla para ver todas las columnas.</p><div aria-label="Comparación de los caminos profesionales" class="tablebox" role="region" tabindex="0"><table><thead><tr><th>Camino</th><th>Dónde entra tu criterio</th><th>Primera prueba</th><th>Qué confirmar</th></tr></thead><tbody>
+<tr><td>Implementación de agentes</td><td>Entender la rutina y verificar la entrega</td><td>Clasificación de solicitudes ficticias con revisión humana</td><td>Quién lo necesita y qué integración haría falta</td></tr>
+<tr><td>Infraestructura</td><td>Instalar, mantener y responder por el trabajo físico</td><td>Mapa de formación y conversación con un profesional</td><td>Requisitos locales, instituciones y empleadores</td></tr>
+<tr><td>Evaluación y seguridad</td><td>Definir aciertos y descubrir fallas</td><td>Prueba repetible con datos inventados</td><td>Conocimientos necesarios y autorización del entorno</td></tr>
+<tr><td>Producción de medios</td><td>Elegir el mensaje y dirigir la producción</td><td>Pieza de portafolio con comentarios del público</td><td>Quién usaría la pieza y qué calidad espera</td></tr>
+<tr><td>Ventas basadas en la confianza</td><td>Entender el compromiso y negociar una entrega posible</td><td>Conversación de investigación con notas anónimas</td><td>Cómo se realiza la compra y quién decide</td></tr>
+<tr><td>Negocio con agentes</td><td>Encontrar clientes y mantener una entrega</td><td>Demostración de un servicio pequeño</td><td>Demanda, costo y riesgo antes de intentar escalar</td></tr>
+</tbody></table></div><p class="source">Ninguna de estas pruebas sustituye la formación profesional. El kit no enseña a realizar intervenciones eléctricas ni autoriza probar sistemas de terceros.</p></div></section>
+<section id="exemplo"><div class="wrap"><h2>De una solicitud estancada a una prueba de trabajo</h2><figure class="diagram" id="diagrama-pedido"><h3>Una solicitud recorre la prueba</h3><div class="case-route"><div class="case-node"><strong>1 · Entrada</strong><small>Solicitud inventada</small><blockquote>“Mi equipo no enciende. ¿Cuánto cuesta?”</blockquote></div><div class="case-node"><strong>2 · Borrador de la IA</strong><small>Información por confirmar</small><blockquote>“¿Cuál es el modelo? ¿Qué ocurrió antes de la falla?”</blockquote></div><div class="case-node"><strong>3 · Revisión humana</strong><small>La persona corrige antes de aprobar</small><blockquote>¿La pregunta tiene sentido? ¿La IA inventó un precio?</blockquote></div></div><p class="diagram-note">Compara con la forma actual</p><div class="check-strip"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m4 12 5 5L20 5"></path></svg>Tiempo de revisión</span><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m4 12 5 5L20 5"></path></svg>Errores encontrados</span><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m4 12 5 5L20 5"></path></svg>Trabajo repetido</span></div><figcaption>Crea 10 solicitudes ficticias. Cuenta los aciertos y errores y mide el tiempo. Declara un ahorro solo después de medirlo. Demostración ficticia. No se envía ninguna respuesta al cliente.</figcaption></figure></div></section>
+<section id="plano"><div class="wrap"><h2>Tu prueba para los próximos 30 días</h2><figure class="diagram" id="diagrama-plano"><h3>De la hipótesis a la decisión</h3><ol class="roadline"><li><span aria-hidden="true" class="road-marker">1</span><time>Días 1–7</time><strong>Elegir</strong><p>Dos hipótesis que aprovechen tu experiencia.</p><div class="road-output"><small>Terminas con</small>Hipótesis escritas</div></li><li><span aria-hidden="true" class="road-marker">2</span><time>Días 8–14</time><strong>Conversar</strong><p>¿Quién hace o contrata este trabajo?</p><div class="road-output"><small>Terminas con</small>Notas y requisitos</div></li><li><span aria-hidden="true" class="road-marker">3</span><time>Días 15–21</time><strong>Demostrar</strong><p>Una prueba pequeña o un mapa de formación.</p><div class="road-output"><small>Terminas con</small>Prueba revisable</div></li><li><span aria-hidden="true" class="road-marker">4</span><time>Días 22–30</time><strong>Decidir</strong><p>Continuar, ajustar, abandonar o investigar.</p><div class="road-output"><small>Terminas con</small>Próximo paso con fecha</div></li></ol><figcaption>Cada etapa deja una prueba. Los 30 días son un calendario de investigación.</figcaption></figure></div></section>
+<section id="fontes"><div class="wrap"><h2>Lo que sabemos y lo que es una hipótesis</h2><p>METR mide el desempeño en tareas de software. Su horizonte del 50% de éxito no equivale a trabajar con confianza sin supervisión en una empresa. <a href="https://metr.org/notes/2026-01-22-time-horizon-limitations/">Lee las limitaciones en METR</a>.</p><figure class="diagram" id="grafico-energia"><h3>Más IA también exige infraestructura</h3><p class="energy-heading">Participación de los centros de datos en el consumo eléctrico de EE. UU.</p><div class="energy-row"><label>2023 · estimación histórica</label><div aria-hidden="true" class="energy-track"><div class="energy-fill"></div></div><b>4,4%</b></div><div class="energy-row"><label>2028 · rango proyectado</label><div aria-hidden="true" class="energy-track"><div class="energy-range"></div></div><b>6,7%–12%</b></div><div aria-label="Escala de 0% a 12%" class="energy-scale"><span>0%</span><span>12%</span></div><div class="energy-legend"><span aria-hidden="true" class="range-key"></span>Rango de la proyección</div><figcaption>Fuente: DOE/LBNL, informe de 2024. El rango de 2028 es un escenario de ese informe; no es una previsión de vacantes en Brasil. <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers">Leer la fuente</a>.</figcaption></figure><p>Anthropic anunció una iniciativa para formar ingenieros de implementación con socios. Una meta anunciada no significa que haya vacantes garantizadas ni inscripciones abiertas. <a href="https://www.anthropic.com/news/claude-frontier-academy">Fuente: Anthropic</a>.</p><p><a href="../../FONTES.md">Fuentes y límites completos (en portugués)</a> · Revisados el 16/11/2026. No se usaron salarios estadounidenses ni ingresos personales como promesa de resultados.</p></div></section>
+<div class="techhead" id="tecnico"><div class="wrap"><h2>El kit: para quienes quieren registrar la investigación</h2><p>No necesitas esta parte para entender lo anterior. Los documentos funcionan sin IA; Python es opcional para revisar que estén completos.</p></div></div><div class="techzone">
+<section id="arquivos"><div class="wrap"><h2>Descarga, descomprime y completa</h2><p><a class="btn" download="" href="../../renda-com-ia-kit.zip">Descargar el kit completo en ZIP</a></p><p>Descomprime el ZIP y abre la carpeta <strong>renda-com-ia</strong>. Entra en la carpeta <strong>kit</strong> y empieza por el documento COMECE-AQUI.md, que se abre en un editor de texto. No necesitas una cuenta, una clave, Git ni conexión para completar las plantillas.</p><ul><li><a download="" href="../../kit/caminhos.csv">Comparación de los caminos (en portugués)</a> — se abre en una hoja de cálculo.</li><li><a download="" href="../../kit/ficha.md">Ficha de hipótesis (en portugués)</a> — experiencia, problema y evidencia.</li><li><a download="" href="../../kit/entrevista.md">Guion de entrevista (en portugués)</a> — preguntas y notas anónimas.</li><li><a download="" href="../../kit/plano-30-dias.md">Plan de 30 días (en portugués)</a> — agenda y criterio para darlo por terminado.</li><li><a download="" href="../../kit/modelo.csv">Modelo de investigación (en portugués)</a> — dos líneas vacías para completar.</li><li><a download="" href="../../kit/exemplo.csv">Ejemplo ficticio completado (en portugués)</a> — muestra el formato esperado.</li></ul></div></section>
+<section id="guia"><div class="wrap"><h2>Verificación local opcional</h2><p>El verificador funciona con Python 3, sin instalar bibliotecas, acceder a la red ni llamar a una IA. Muestra los campos vacíos y las decisiones no válidas. No verifica si el contenido es verdadero, si la demostración funciona ni qué profesión deberías elegir.</p><h3>Primer uso en Windows</h3><p>Instala Python 3 desde el sitio oficial python.org y habilita la opción para que el comando esté disponible en la terminal. Abre la carpeta extraída en el Explorador, haz clic en la barra de direcciones, escribe cmd y presiona Enter. Ejecuta:</p><pre>py -3 scripts/conferir.py kit/exemplo.csv</pre><h3>Primer uso en Linux o Mac</h3><p>Usa Python 3 instalado desde python.org o mediante el administrador de paquetes de tu sistema. En la terminal, entra en la carpeta extraída renda-com-ia (puedes arrastrarla para completar la ruta después de cd). Ejecuta:</p><pre>python3 scripts/conferir.py kit/exemplo.csv</pre><p>El ejemplo devuelve dos filas con 6/6 campos y decisiones <code translate="no">ajustar</code> e <code translate="no">continuar</code>. Esto significa completar todos los campos, sin evaluar carreras. Para usar tus datos, copia modelo.csv a minha-investigacao.csv en la carpeta kit, completa el archivo y ejecuta:</p><pre>python3 scripts/conferir.py kit/minha-investigacao.csv</pre><p>En Windows, sustituye python3 por py -3. Conserva los nombres de las columnas y los ID <code translate="no">agentes, infra, avaliacao, midia, vendas, negocio</code>. Decisiones válidas: <code translate="no">continuar, ajustar, abandonar, pesquisar</code>. El texto con comas debe ir entre comillas en el CSV. Los enlaces y las notas de evidencia pueden apuntar a tus archivos.</p><p>Código de salida 0: todos los campos completados;1: faltan campos;2: archivo no válido o no disponible. Se espera un resultado 1 con el modelo vacío. Para ver JSON, agrega --json al comando.</p><p>Si aparece “comando no encontrado”, revisa la instalación de Python. Si aparece “encabezado incorrecto”, vuelve al modelo original y conserva las siete columnas. Los archivos del kit están en portugués; la guía tiene versiones EN y ES.</p></div></section>
+<section id="limites"><div class="wrap"><h2>Usa los comentarios para decidir</h2><p>El kit está listo cuando tienes una hipótesis escrita, una conversación registrada, una prueba que se puede revisar y una decisión. Completar el campo evidencia solo sirve como referencia: todavía tienes que abrir y evaluar el archivo.</p><p>Si la conversación o la prueba no se realizaron, registra esa brecha. Abandonar una hipótesis puede evitar desperdicios. La próxima experiencia parte de lo que aprendiste.</p></div></section></div>
+<footer><div class="wrap"><p>Renda com IA · Kit educativo gratuito · v1.0.1<br/><a href="https://github.com/inematds/renda-com-ia">Repositorio</a> · <a href="https://inema.club">INEMA.CLUB</a></p></div></footer>
+<script>(function(){var key='renda-com-ia-theme',b=document.body,t=document.getElementById('themeToggle');try{if(localStorage.getItem(key)==='light')b.classList.add('light')}catch(e){}function state(){t.textContent=b.classList.contains('light')?'🌙':'☀️';t.setAttribute('aria-pressed',String(b.classList.contains('light')))}state();t.onclick=function(){b.classList.toggle('light');try{localStorage.setItem(key,b.classList.contains('light')?'light':'dark')}catch(e){}state()}})();</script></body></html>

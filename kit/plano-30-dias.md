@@ -1,16 +1,16 @@
-# Plano de30 dias
+# O primeiro mês da operação que você quer construir
 
-É uma agenda sugerida de investigação; não é prazo para ficar qualificado ou conseguir emprego.
+É um roteiro de avanço. Cada etapa deixa algo que você consegue mostrar.
 
-| Período | Ação | Pronto quando |
+| Período | Movimento | O que você terá em mãos |
 |---|---|---|
-| Dias1–7 | Escolher dois caminhos e preencher a hipótese | Experiência e problema escritos para ambos |
-| Dias8–14 | Conversar com profissionais/contratantes e pesquisar formação local | Notas anônimas e lacunas registradas |
-| Dias15–21 | Fazer uma demonstração pequena ou mapa de formação | Arquivo revisável e critério de qualidade preenchido |
-| Dias22–30 | Pedir retorno e decidir | Evidência + próximo passo com data + decisão explícita |
+| Dias1–7 | Enxergar a entrega e desenhar os papéis | Uma página com sua visão e seu mapa de operação |
+| Dias8–14 | Conversar com quem vive o problema | Notas para ajustar o resultado e os requisitos |
+| Dias15–21 | Montar a demonstração com dados fictícios | Um exemplo que percorre entrada, rascunho e revisão |
+| Dias22–30 | Pedir retorno e preparar uma oferta | Um rascunho de oferta, evidências e próximo passo |
 
-Se não conseguir entrevista, marque pesquisar e escreva quem procurar. Se a demonstração falhar, guarde a falha: é evidência para ajustar ou abandonar, não motivo para declarar sucesso.
+Comece por kit/visao.md, depois equipe.md, oferta.md e algo-seu.md.
+O prazo organiza a primeira experiência; qualificação, implantação e contratação podem levar mais tempo.
 
-## Pedido opcional para seu assistente de IA
-
-“Leia minha ficha anonimizada. Separe fatos observados, suposições e perguntas abertas. Sugira uma experiência pequena que eu possa conferir, com critério de pronto. Não invente salários ou demanda, não escolha por mim e não execute nem contate ninguém.”
+## A pergunta que encerra o mês
+O que eu consigo conduzir agora que antes ficava só como ideia? Mostre a evidência e escolha o próximo movimento.

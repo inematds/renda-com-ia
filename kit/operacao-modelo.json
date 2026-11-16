@@ -1,0 +1,13 @@
+{
+ "nome":"",
+ "para_quem":"",
+ "resultado":"",
+ "experiencia":"",
+ "papeis":[{"nome":"","recebe":"","entrega":"","chama_voce":""}],
+ "aprovacao_humana":"",
+ "demonstracao":"",
+ "oferta":"",
+ "fora_do_escopo":"",
+ "algo_seu":"",
+ "proximo_passo":""
+}
