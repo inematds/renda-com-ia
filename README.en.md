@@ -4,6 +4,9 @@
 
 [![Renda com IA](guia/assets/banner-en.jpg)](https://inematds.github.io/renda-com-ia/guia/en/)
 
+
+🎬 [Video in Portuguese.](https://inematds.github.io/renda-com-ia/videos/)
+
 ## What it is
 
 You want to remain useful at work as artificial intelligence takes on more tasks. Renda com IA is a free kit for professionals who want to explore alternatives without making decisions based only on enthusiasm or fear. It compares paths, provides worksheets for talking with potential employers, and organizes a 30-day experience. You can read the guide and fill out the documents in a spreadsheet or text editor; local automated checking is optional. The result is a better-researched hypothesis, with no promise of income or employment.

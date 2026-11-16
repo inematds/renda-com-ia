@@ -4,6 +4,9 @@
 
 [![Renda com IA](guia/assets/banner.jpg)](https://inematds.github.io/renda-com-ia/guia/)
 
+
+🎬 [Vídeo em português.](https://inematds.github.io/renda-com-ia/videos/)
+
 ## O que é
 
 Você quer continuar útil no trabalho enquanto a inteligência artificial assume mais tarefas. Renda com IA é um kit gratuito para profissionais que querem investigar alternativas sem decidir só pelo entusiasmo ou pelo medo. Ele compara caminhos, oferece fichas para conversar com quem contrata e organiza uma experiência de 30 dias. Você pode ler o guia e preencher os documentos numa planilha ou editor de texto; a conferência automática local é opcional. O resultado é uma hipótese mais bem investigada, sem promessa de renda ou contratação.

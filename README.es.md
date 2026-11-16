@@ -4,6 +4,9 @@
 
 [![Renda com IA](guia/assets/banner-es.jpg)](https://inematds.github.io/renda-com-ia/guia/es/)
 
+
+🎬 [Vídeo en portugués.](https://inematds.github.io/renda-com-ia/videos/)
+
 ## Qué es
 
 Quieres seguir siendo útil en el trabajo mientras la inteligencia artificial asume más tareas. Ingresos con IA es un kit gratuito para profesionales que quieren investigar alternativas sin decidirse solo por el entusiasmo o el miedo. Compara opciones, ofrece fichas para conversar con quienes contratan y organiza una experiencia de 30 días. Puedes leer la guía y completar los documentos en una hoja de cálculo o un editor de texto; la verificación automática local es opcional. El resultado es una hipótesis mejor investigada, sin promesas de ingresos ni de contratación.
