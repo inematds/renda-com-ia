@@ -40,3 +40,5 @@ python3 scripts/testar.py
 ## Comparing the Approaches
 
 The first video is preserved: https://www.youtube.com/watch?v=aQoAdOuU_K4 . The second is in production with the vision of possibility and building. [Comparison plan](comparacao/PLANO.md) and [frozen guide A](comparacao/a/guia/). This is an editorial comparison, with different dates and exposure.
+
+[New video: your experience can lead an AI team](https://www.youtube.com/watch?v=zOCYbP3yoR8) · [Player](https://inematds.github.io/renda-com-ia/videos/possibilidades/)

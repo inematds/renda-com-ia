@@ -4,7 +4,7 @@ Pedido do Nei em16/11/2026: publicar outro vídeo com possibilidade/desejo prime
 
 ## Condições
 - A: https://www.youtube.com/watch?v=aQoAdOuU_K4 — lives11,430,186s, abordagem de preparação/investigação. Kit e guias congelados em comparacao/a/; commit original a967b81. Não alterar título, arquivo ou excluir.
-- B: em produção, id renda-com-ia-possibilidades — lives11,16:9, mesma voz/avatar e tema. Possibilidade concreta → operação com agentes → direção humana → oferta e algo seu. Registrar URL, duração, publicação e thumb no RECIBO-B.json quando sair.
+- B: https://www.youtube.com/watch?v=zOCYbP3yoR8 — publicado em 2026-11-16T17:56:41Z, 354.178s, id renda-com-ia-possibilidades — lives11,16:9, mesma voz/avatar e tema. Possibilidade concreta → operação com agentes → direção humana → oferta e algo seu. Registrar URL, duração, publicação e thumb no RECIBO-B.json quando sair.
 - O kit principal passa a acompanhar a abordagem B. A cópia comparacao/a/ permanece congelada.
 
 ## Como comparar

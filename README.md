@@ -40,3 +40,5 @@ python3 scripts/testar.py
 ## Comparação das abordagens
 
 O primeiro vídeo está preservado: https://www.youtube.com/watch?v=aQoAdOuU_K4 . O segundo está em produção com a visão de possibilidade e construção. [Plano de comparação](comparacao/PLANO.md) e [guia A congelado](comparacao/a/guia/). É comparação editorial, com datas e exposição diferentes.
+
+[Novo vídeo: sua experiência pode dirigir uma equipe de IA](https://www.youtube.com/watch?v=zOCYbP3yoR8) · [Player](https://inematds.github.io/renda-com-ia/videos/possibilidades/)

@@ -40,3 +40,5 @@ python3 scripts/testar.py
 ## Comparación de los enfoques
 
 El primer video se conserva: https://www.youtube.com/watch?v=aQoAdOuU_K4 . El segundo está en producción, con la visión de posibilidad y construcción. [Plan de comparación](comparacao/PLANO.md) y [guía A congelada](comparacao/a/guia/). Es una comparación editorial, con fechas y exposición diferentes.
+
+[Nuevo video: tu experiencia puede dirigir un equipo de IA](https://www.youtube.com/watch?v=zOCYbP3yoR8) · [Player](https://inematds.github.io/renda-com-ia/videos/possibilidades/)

@@ -1,0 +1,29 @@
+{
+  "versao": "B",
+  "video_id": "zOCYbP3yoR8",
+  "youtube": "https://www.youtube.com/watch?v=zOCYbP3yoR8",
+  "player": "https://inematds.github.io/renda-com-ia/videos/possibilidades/",
+  "release": "https://github.com/inematds/renda-com-ia/releases/tag/video-possibilidades-v1.0.0",
+  "publicado_em": "2026-11-16T17:56:41Z",
+  "duracao_s": 354.178,
+  "thumbnail": "videos/possibilidades/poster.jpg",
+  "thumbnail_youtube": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/zOCYbP3yoR8/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/zOCYbP3yoR8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/zOCYbP3yoR8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    }
+  },
+  "titulo": "Sua experiência pode dirigir uma equipe de IA",
+  "primeiro_video_preservado": "https://www.youtube.com/watch?v=aQoAdOuU_K4"
+}
