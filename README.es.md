@@ -2,7 +2,7 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![Renda com IA](guia/assets/banner.jpg)](https://inematds.github.io/renda-com-ia/guia/es/)
+[![Renda com IA](guia/assets/banner-es.jpg)](https://inematds.github.io/renda-com-ia/guia/es/)
 
 ## Qué es
 

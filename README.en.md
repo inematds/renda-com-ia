@@ -1,8 +1,8 @@
-# Income with AI
+# Renda com IA
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![Renda com IA](guia/assets/banner.jpg)](https://inematds.github.io/renda-com-ia/guia/en/)
+[![Renda com IA](guia/assets/banner-en.jpg)](https://inematds.github.io/renda-com-ia/guia/en/)
 
 ## What It Is
 
