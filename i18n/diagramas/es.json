@@ -1,0 +1,88 @@
+{
+  "roles_title": "¿Quién hace qué?",
+  "roles_note": "Ejemplo ficticio: la IA organiza; una persona decide y responde por la entrega.",
+  "roles": [
+    [
+      "Solicitud incompleta",
+      "“Necesito un presupuesto.”"
+    ],
+    [
+      "La IA organiza",
+      "Señala la información que falta."
+    ],
+    [
+      "La persona decide",
+      "Verifica los datos y aprueba la respuesta."
+    ]
+  ],
+  "bottleneck": "El cuello de botella puede estar aquí: falta información para decidir.",
+  "intro": "Cuando producir texto o código se vuelve más fácil, el valor puede trasladarse a entender la solicitud, verificar el resultado y ganarse la confianza del cliente. El punto que bloquea esa entrega es el cuello de botella.",
+  "agent": "Un agente de IA ejecuta etapas para alcanzar un objetivo. Tú defines los límites y verificas la entrega.",
+  "case_title": "Una solicitud recorre la prueba",
+  "case_note": "Demostración ficticia. No se envía ninguna respuesta al cliente.",
+  "case": [
+    [
+      "1 · Entrada",
+      "“Mi equipo no enciende. ¿Cuánto cuesta?”",
+      "Solicitud inventada"
+    ],
+    [
+      "2 · Borrador de la IA",
+      "“¿Cuál es el modelo? ¿Qué ocurrió antes de la falla?”",
+      "Información por confirmar"
+    ],
+    [
+      "3 · Revisión humana",
+      "¿La pregunta tiene sentido? ¿La IA inventó un precio?",
+      "La persona corrige antes de aprobar"
+    ]
+  ],
+  "compare_title": "Compara con la forma actual",
+  "compare": [
+    "Tiempo de revisión",
+    "Errores encontrados",
+    "Trabajo repetido"
+  ],
+  "compare_note": "Crea 10 solicitudes ficticias. Cuenta los aciertos y errores y mide el tiempo. Declara un ahorro solo después de medirlo.",
+  "road_title": "De la hipótesis a la decisión",
+  "road_note": "Cada etapa deja una prueba. Los 30 días son un calendario de investigación.",
+  "road": [
+    [
+      "Días 1–7",
+      "Elegir",
+      "Dos hipótesis que aprovechen tu experiencia.",
+      "Hipótesis escritas"
+    ],
+    [
+      "Días 8–14",
+      "Conversar",
+      "¿Quién hace o contrata este trabajo?",
+      "Notas y requisitos"
+    ],
+    [
+      "Días 15–21",
+      "Demostrar",
+      "Una prueba pequeña o un mapa de formación.",
+      "Prueba revisable"
+    ],
+    [
+      "Días 22–30",
+      "Decidir",
+      "Continuar, ajustar, abandonar o investigar.",
+      "Próximo paso con fecha"
+    ]
+  ],
+  "output": "Terminas con",
+  "energy_title": "Más IA también exige infraestructura",
+  "energy_sub": "Participación de los centros de datos en el consumo eléctrico de EE. UU.",
+  "energy_actual": "2023 · estimación histórica",
+  "energy_future": "2028 · rango proyectado",
+  "energy_low": "6,7%",
+  "energy_high": "12%",
+  "energy_value": "4,4%",
+  "energy_scale": "Escala de 0% a 12%",
+  "energy_note": "Fuente: DOE/LBNL, informe de 2024. El rango de 2028 es un escenario de ese informe; no es una previsión de vacantes en Brasil.",
+  "energy_link": "Leer la fuente",
+  "forecast_key": "Rango de la proyección",
+  "check": "Verificar"
+}

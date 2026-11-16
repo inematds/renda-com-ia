@@ -1,0 +1,88 @@
+{
+  "roles_title": "Who does what?",
+  "roles_note": "Fictional example: AI organizes; a person decides and takes responsibility for the delivery.",
+  "roles": [
+    [
+      "Incomplete request",
+      "“I need a quote.”"
+    ],
+    [
+      "AI organizes",
+      "Points out the missing information."
+    ],
+    [
+      "Person decides",
+      "Checks the data and approves the response."
+    ]
+  ],
+  "bottleneck": "The bottleneck may be here: there isn’t enough information to decide.",
+  "intro": "When producing text or code becomes easier, value may shift toward understanding the request, checking the result, and earning the client’s trust. The point that holds up this delivery is the bottleneck.",
+  "agent": "An AI agent performs steps to achieve a goal. You set the limits and check the delivery.",
+  "case_title": "A request goes through the test",
+  "case_note": "Fictional demonstration. No response is sent to the client.",
+  "case": [
+    [
+      "1 · Input",
+      "“My equipment won’t turn on. How much does it cost?”",
+      "Invented request"
+    ],
+    [
+      "2 · AI draft",
+      "“What’s the model? What happened before it failed?”",
+      "Information to confirm"
+    ],
+    [
+      "3 · Human review",
+      "Does the question make sense? Did the AI invent a price?",
+      "The person corrects it before approving"
+    ]
+  ],
+  "compare_title": "Compare with the current approach",
+  "compare": [
+    "Review time",
+    "Errors found",
+    "Rework"
+  ],
+  "compare_note": "Create 10 fictional requests. Count correct answers and errors, and measure the time. Only claim savings after measuring.",
+  "road_title": "From hypothesis to decision",
+  "road_note": "Each step leaves evidence. The 30 days are an investigation schedule.",
+  "road": [
+    [
+      "Days 1–7",
+      "Choose",
+      "Two hypotheses that make use of your experience.",
+      "Written hypotheses"
+    ],
+    [
+      "Days 8–14",
+      "Talk",
+      "Who does or hires for this work?",
+      "Notes and requirements"
+    ],
+    [
+      "Days 15–21",
+      "Demonstrate",
+      "A small test or a training roadmap.",
+      "Reviewable evidence"
+    ],
+    [
+      "Days 22–30",
+      "Decide",
+      "Continue, adjust, abandon, or research.",
+      "Next step with a date"
+    ]
+  ],
+  "output": "You finish with",
+  "energy_title": "More AI also requires infrastructure",
+  "energy_sub": "Data centers’ share of U.S. electricity consumption",
+  "energy_actual": "2023 · historical estimate",
+  "energy_future": "2028 · projected range",
+  "energy_low": "6.7%",
+  "energy_high": "12%",
+  "energy_value": "4.4%",
+  "energy_scale": "Scale from 0% to 12%",
+  "energy_note": "Source: DOE/LBNL, 2024 report. The 2028 range is a scenario in that report; it is not a forecast of jobs in Brazil.",
+  "energy_link": "Read the source",
+  "forecast_key": "Projected range",
+  "check": "Check"
+}
